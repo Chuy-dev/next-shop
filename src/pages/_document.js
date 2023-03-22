@@ -2,10 +2,10 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 class MyDocument extends Document {
   render() {
-    return(
-      <Html lang='en'>
+    return (
+      <Html lang="en">
         <Head>
-          <title>React Shop</title>
+          <meta charSet="utf-8" />
         </Head>
         <body>
           <Main />
@@ -14,6 +14,6 @@ class MyDocument extends Document {
       </Html>
     );
   }
-};
+}
 
 export default MyDocument;

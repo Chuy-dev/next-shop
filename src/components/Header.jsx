@@ -15,7 +15,7 @@ const Header = () => {
 	return (
 		<>
 			<nav className={styles.Nav}>
-				<Image src={menu} alt="menu" className={styles.menu} />
+				<img src={menu.src} alt="menu" className={styles.menu} />
 				<div className={styles['navbar-left']}>
 					<Link href="/">
 						<Image src={logo} alt="logo" className={styles['nav-logo']} />
@@ -47,7 +47,7 @@ const Header = () => {
 							platzi@example.com
 						</li>
 						<li
-							// className={styles.['navbar-shopping-cart']}
+							className={styles['navbar-shopping-cart']}
 							onClick={() => toggleOrder()}
 						>
 							<Image className={styles['more-clickable-area'], styles.pointer} src={shoppingCart} alt="shopping cart" />
